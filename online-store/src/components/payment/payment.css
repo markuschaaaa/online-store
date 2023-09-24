@@ -1,0 +1,94 @@
+#payment {
+   min-height: 1px;
+   display: none;
+}
+#payment.open{
+   display: block;
+}
+.popup__pay{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.8s ease 0s;
+}
+
+.popup__pay.open{
+   opacity: 1;
+   visibility: visible;
+}
+
+.popup__pay.open.pay__popup__content{
+   opacity: 1;
+}
+
+.pay__popup__body{
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px 10px;
+}
+
+.pay__popup__content{
+   background: rgba(200, 200, 200, 0.8);
+   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0);
+   color: black;
+   max-width: 800px;
+   width: 100%;
+   height: 600px;
+   padding: 30px;
+   position: relative;
+   transition: all 0.8s ease 0s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.pay__popup__close{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   text-decoration: none;
+   color: black;
+}
+/* INPUT */
+.input{
+   background: rgb(201, 200, 200);
+   margin: 5px;
+   padding: 15px 10px;
+   border-radius: 2px;
+   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0);
+}
+.input.error{
+   box-shadow:0px 0px 5px 2px red;
+   border: red;
+}
+.pay__form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.btn{
+   background: rgb(201, 200, 200);
+   margin: 5px;
+   padding: 5px 20px;
+   border-radius: 2px;
+   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0);
+}
+
+.name-warning.active,
+.number-warning.active,
+.adress-warning.active,
+.email-warning.active,
+.card-warning.active,
+.valid-warning.active,
+.cvv-warning.active{
+   display: none;
+}

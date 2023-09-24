@@ -1,0 +1,58 @@
+.git-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.git-wrapper span {
+  color: #444;
+  transition: 0.25s;
+}
+
+.git {
+  display: inline-block;
+}
+
+.git-logo {
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/icons/github-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #59c3c3;
+  transition: 0.25s;
+}
+
+.git-logo:hover {
+  background-image: url('../../assets/icons/github-logo-hover.svg');
+}
+
+.rss {
+  margin-right: 20px;
+}
+
+.rss .rss-logo {
+  width: 120px;
+  height: 80px;
+  background-image: url('../../assets/icons/rs_school_js.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.25s;
+}
+
+.rss .rss-logo:hover {
+  background-image: url('../../assets/icons/rs_school_js_hover.svg');
+}
+
+@media screen and (max-width: 379px) {
+  .git-wrapper {
+    margin-left: 1px;
+  }
+
+  .rss {
+    text-align: right;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1919;
+}
+
+header {
+  height: 120px;
+  background: #A3D0C3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main {
+  min-height: calc(100vh - 240px);
+  display: flex;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #59c3c3;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,213 @@
+/* BLOCKS */
+.product-container{
+   height: 130vh;
+   margin: 0 auto;
+}
+.product__wrap{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   margin-top: 50px;
+   max-width: 1225px;
+   width: 100%;
+   height: 800px;
+}
+.product__source{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 30px;
+}
+.source_item{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 0px;
+   height: 100%;
+   max-height: 52px;
+   font-size: 32px;
+   margin-right: 10px;
+}
+.product__name{
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 45px;
+}
+.product__main{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   height: 100%;
+   max-height: 725px;
+}
+.product__galery{
+   width: 100%;
+   max-width: 120px;
+}
+.product__galery div{
+   margin-bottom: 20px;
+}
+.product__image{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+}
+.main_img{
+   padding-top: 30px;
+   width: 500px;
+}
+.product__description{
+   background: #F5F5F5FF;
+   border-radius: 10px;
+   width: 100%;
+   max-width: 505px;
+   height: fit-content;
+   padding: 20px 40px;
+}
+.product__price{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 505px;
+}
+/* ELEMS */
+.source_item{
+   text-transform: uppercase;
+}
+.source_item a{
+   text-decoration: none;
+   color: #000;
+}
+.product__image img{
+   max-width: 100px;
+}
+.main_img img{
+   width: 100%;
+   max-width: 500px;
+}
+
+.product__price .elem,
+.product__description .item{
+   height: 67px;
+}
+.product__price .elem{
+   text-transform: uppercase;
+   margin-bottom: 15px;
+}
+.product__price .elem a{
+   text-decoration: none;
+   color: red;
+}
+.product__price .elem:first-child{
+   font-weight: 700;
+   font-size: 24px;
+}
+.product__price .elem:nth-child(2) {
+   color: red;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+.product__price .elem:nth-child(2):hover {
+   transition: all 0.8s ease 0s;
+   color: #fff;
+   background: red;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+.product__price .elem:nth-child(2):active {
+   color: rgb(20, 209, 64);
+   background: #fff;
+   border: 1px solid rgb(20, 209, 64);
+   border-radius: 10px;
+}
+.product__price .elem:nth-child(3) {
+   color: red;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+
+.product__price .elem:nth-child(3):hover {
+   transition: all 0.8s ease 0s;
+   color: #fff;
+   background: red;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+.product__price .elem:nth-child(3):active {
+   color: rgb(20, 209, 64);
+   background: #fff;
+   border: 1px solid rgb(20, 209, 64);
+   border-radius: 10px;
+}
+.product__description .item{
+   display: flex;
+   justify-content: space-between;
+   align-content: center; 
+   flex-wrap: wrap;
+   border-top: 1px solid black;
+   border-radius: 0px;
+}
+.product__description .item:nth-child(6) {
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   flex-wrap: wrap;
+   border-top: 1px solid black;
+   border-radius: 0px;
+   height:fit-content;
+}
+.pre__description{
+   text-transform: uppercase;
+}
+/*    POPUP    */
+.popup{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.8s ease 0s;
+}
+
+.popup.open{
+   opacity: 1;
+   visibility: visible;
+}
+.popup.open .popup__content{
+   opacity: 1;
+}
+.popup__body{
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px 10px;
+}
+.popup__content{
+   max-width: 800px;
+   padding: 30px;
+   position: relative;
+   transition: all 0.8s ease 0s;
+}
+.popup__content img{
+   border-radius: 20px;
+}
+.popup__content a{
+   color: #fff;
+   font-size: 24px;
+   text-decoration: none;
+}
+.popup__close{
+   position: absolute;
+   right: 0px;
+   top: 0px;
+}
